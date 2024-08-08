@@ -20,7 +20,7 @@ For example here we want at `/karo` route to view the `karo.html` file, so you a
 
 ```js
 app.get('/karo', (req, res) => {
-    res.sendFile(path.join(__dirname+'/views/karo.html'))
+    res.sendFile(path.join(__dirname, '/views/karo.html'))
 })
 ```
 Do the same for the rest of the routes and for the rest of the files

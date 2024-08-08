@@ -8,15 +8,15 @@ app.listen(3000, () => {
 })
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname+'/views/index.html'))
+    res.sendFile(path.join(__dirname, '/views/index.html'))
 })
 
 app.get('/about', (req, res) => {
-    res.sendFile(path.join(__dirname+'/views/about.html'))
+    res.sendFile(path.join(__dirname, '/views/about.html'))
 })
 
 app.get('/profile', (req, res) => {
-    res.sendFile(path.join(__dirname+'/views/profile.html'))
+    res.sendFile(path.join(__dirname, '/views/profile.html'))
 })
 
 // Catch-all route
