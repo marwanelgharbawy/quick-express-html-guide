@@ -1,5 +1,8 @@
 # Quickly setup a server using express
 
+Steps to create a local server to experiment with your static webpage/front-end project
+
+## Requirements
 These steps only require you to install node, you can postpone your understanding to express stuff later.
 
 This will only show you how you can use express and what to modify so that you can view your static webpage on a local server.
