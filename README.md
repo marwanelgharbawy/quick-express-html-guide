@@ -1,6 +1,6 @@
-# Quickly setup a server using express
+# Quickly setup a server using express to view your HTML files ANYWHERE.
 
-Steps to create a local server to experiment with your static webpage/front-end project
+Steps to create a local server to experiment with your static webpage/front-end project. This will allow you to have a server up and running on your local network. You can view it on your phone, tablet, or use port forwarding to view it from other devices on different networks.
 
 ## Requirements
 These steps only require you to install node, you can postpone your understanding to express stuff later.
@@ -35,7 +35,7 @@ Do the same for the rest of the routes and for the rest of the files
 Put your HTML files in the views directory. The JS code checks files with the format `views/something.html` so it can be more organized. You can totally put the files wherever you want but you have to change the path in the code.
 
 ## Step 5: Run node
-Run the following node file, it will create a server on http://localhost:3000 and now you can experiment with your files.
+Run the following node file, it will create a server on `http://localhost:3000` and now you can experiment with your files.
 
 ```js
 node index.js
@@ -57,3 +57,31 @@ or
 ```
 nodemon
 ```
+## Viewing the webpage
+
+### On a Local Network:
+
+- The server runs on `http://localhost:3000`.
+- "Localhost" resolves to your computer's IP address. To view the webpage on your phone or another device on the same network:
+  1. Find your computer's IP address.
+  2. Replace "localhost" with this IP address in the URL.
+
+### On a Different Network:
+
+You can use port forwarding to access the webpage from a different network. Port forwarding allows external devices to connect to services inside a private (local) network by redirecting traffic through a router.
+
+#### Using VS Code:
+
+1. **Start the Server**: Make sure your server is running.
+
+2. **Open the VS Code Panel**:
+   - Press `CTRL + J` to toggle the panel.
+   - Switch to the `PORTS` tab.
+
+3. **Forward a Port**:
+   - Click on the "Forward a Port" button.
+   - Note the Forwarded Address provided.
+
+4. **Access the Webpage**:
+   - Copy the Forwarded Address.
+   - Use this address in any browser on any device to view the webpage.
