@@ -19,8 +19,9 @@ npm i
 
 ## Step 3: Configure `index.js` 
 
-Since we're only working with GET requests, you'll need to specify each route and specify the HTML file you want to view.
-For example here we want at `/karo` route to view the `karo.html` file, so you add the following function call:
+The index.js file serves as a template for you to use right away, with slight modifications according to your routes and files. Since we're only working with GET requests, you'll need to specify each route and the corresponding HTML file you want to view.
+
+**Example:** To view the `karo.html` file at the `/karo` route, add the following function call to `index.js`:
 
 ```js
 app.get('/karo', (req, res) => {
@@ -28,11 +29,11 @@ app.get('/karo', (req, res) => {
 })
 ```
 
-Do the same for the rest of the routes and for the rest of the files
+Do the same for other routes and files.
 
 ## Step 4: Configure your HTML files path
 
-Put your HTML files in the views directory. The JS code checks files with the format `views/something.html` so it can be more organized. You can totally put the files wherever you want but you have to change the path in the code.
+Place your HTML files in the views directory. The JS code looks for files in the format views/something.html to keep things organized. You can put the files elsewhere but you must change the path in the code accordingly.
 
 ## Step 5: Run node
 Run the following node file, it will create a server on `http://localhost:3000` and now you can experiment with your files.
@@ -48,12 +49,12 @@ Install nodemon so that it restarts the node file everytime a change happens, it
 npm i nodemon -g
 ```
 
-With that, you can run `nodemon` instead of `node` in your terminal
+With that, you can run `nodemon` instead of `node` in your terminal:
 
 ```
 nodemon index.js
 ```
-or
+or simply:
 ```
 nodemon
 ```
