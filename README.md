@@ -16,7 +16,7 @@ This will only show you how you can use express and what to modify so that you c
 Run `git clone <repository.git>` on your terminal, or just download the ZIP file and extract it.
 
 ## Step 2: Install packages
-Run the following command in the directory containing `package.json` (the main workspace) to install packages, it will create a `package-lock.json` file and a `node_modules` directory (ignore them)
+Run the following command in the directory containing `package.json` (the main workspace) to install packages, it will create a `package-lock.json` file and a `node_modules` directory, which are the necessary files for your project.
 
 ```bash
 npm i
