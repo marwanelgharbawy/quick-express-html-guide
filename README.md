@@ -1,6 +1,11 @@
 # Quickly setup a server using express to view your HTML files ANYWHERE.
 
-Steps to create a local server to experiment with your static webpage/front-end project. This will allow you to have a server up and running on your local network. You can view it on your phone, tablet, or use port forwarding to view it from other devices on different networks.
+Steps to create a local server to experiment with your static webpage/front-end project. This will allow you to have a server up and running on your local network.  
+
+## Why would I want to do that?
+**Can't I just open the html file on my browser and test it the normal way?**
+
+By setting up a server, you can view your website on different devices, such as your phone, tablet, or use port forwarding to even view it from other devices on different networks. Also, if you're still a beginner in web development, this is a good step for you to integrate the backend with the frontend.
 
 ## Requirements
 These steps only require you to install node, you can postpone your understanding to express stuff later.
